@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://aaronhm.com/blog</id>
+    <title>Aarón Gabriel Hinojosa Maya Blog</title>
+    <updated>2019-12-26T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://aaronhm.com/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Aarón Gabriel Hinojosa Maya news and events.</subtitle>
+    <logo>https://aaronhm.com/img/firma.svg</logo>
+    <rights>Copyright © 2019 aaroncadillac</rights>
+    <entry>
+        <title type="html"><![CDATA[Coming Soon]]></title>
+        <id>https://aaronhm.com/blog/2019/12/26/coming-soon.html</id>
+        <link href="https://aaronhm.com/blog/2019/12/26/coming-soon.html"/>
+        <updated>2019-12-26T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>I will write coming soon</p> ]]></summary>
+        <author>
+            <name>Aarón Hinojosa</name>
+            <email/>
+            <uri>http://twitter.com/aaron_cadillac</uri>
+        </author>
+    </entry>
+</feed>

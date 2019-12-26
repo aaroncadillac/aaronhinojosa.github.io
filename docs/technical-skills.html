@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Technical skills · Aarón Gabriel Hinojosa Maya</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="- FrontEnd"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Technical skills · Aarón Gabriel Hinojosa Maya"/><meta property="og:type" content="website"/><meta property="og:url" content="https://aaronhm.com/"/><meta property="og:description" content="- FrontEnd"/><meta property="og:image" content="https://aaronhm.com/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://aaronhm.com/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.svg"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://aaronhm.com/blog/atom.xml" title="Aarón Gabriel Hinojosa Maya Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://aaronhm.com/blog/feed.xml" title="Aarón Gabriel Hinojosa Maya Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/firma.svg" alt="Aarón Gabriel Hinojosa Maya"/><h2 class="headerTitleWithLogo">Aarón Gabriel Hinojosa Maya</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/whoami" target="_self">Getting Started</a></li><li class="siteNavGroupActive"><a href="/docs/contact-me" target="_self">API</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/whoami">Who am I</a></li><li class="navListItem"><a class="navItem" href="/docs/expertise">Expertise</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/technical-skills">Technical skills</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/contact-me">Contact me</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Technical skills</h1></header><article><div><span><ul>
+<li>FrontEnd
+<ul>
+<li>JS (Vanilla y ES6)</li>
+<li>PolymerJS (All versions)</li>
+<li>React</li>
+<li>LitElement</li>
+<li>Webcomponents</li>
+</ul></li>
+<li>BackEnd
+<ul>
+<li>Node.js (Express, Loopback)</li>
+<li>J2EE</li>
+</ul></li>
+<li>Databases
+<ul>
+<li>MongoDB</li>
+<li>MySQL/MariaDB</li>
+<li>SQLServer</li>
+</ul></li>
+<li>CI
+<ul>
+<li>Jenkins</li>
+<li>GitlabCI</li>
+<li>Travis</li>
+</ul></li>
+<li>Containers
+<ul>
+<li>Docker</li>
+</ul></li>
+<li>Version control
+<ul>
+<li>Git</li>
+</ul></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/expertise"><span class="arrow-prev">← </span><span>Expertise</span></a><a class="docs-next button" href="/docs/contact-me"><span>Contact me</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/firma.svg" alt="Aarón Gabriel Hinojosa Maya"/></a><div><h5>Docs</h5><a href="/docs/en/whoami">Getting Started (or other categories)</a><a href="/docs/en/expertise">Guides (or other categories)</a><a href="/docs/en/technical-skills">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">Showcase</a><a href="https://stackoverflow.com/users/8072262/aar%c3%b3n-gabriel-hinojosa-maya?tab=questions" target="_blank" rel="noreferrer noopener">Stack Overflow</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/aaroncadillac/aaroncadillac.github.io">View on GitHub</a><div class="social"><a href="https://twitter.com/aaron_cadillac" class="twitter-follow-button">Follow @aaron_cadillac</a></div></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 aaroncadillac</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
